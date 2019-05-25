@@ -123,6 +123,7 @@ window.requestAnimationFrame = window.requestAnimationFrame || function (callbac
             item.className = 'playlist-item'
             item.setAttribute('data-index', i)
             item.setAttribute('data-title', e.title)
+            item.setAttribute('data-time', e.time)
             item.setAttribute('data-src', e.src)
             item.setAttribute('data-lyric', e.lyric)
             item.innerHTML = '<i class="iconfont icon-play"></i>'
