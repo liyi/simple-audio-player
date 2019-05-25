@@ -1,0 +1,40 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.woff?t=1558780732241') format('woff');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-volume:before {
+  content: "\e628";
+}
+
+.icon-play:before {
+  content: "\e651";
+}
+
+.icon-next:before {
+  content: "\e61e";
+}
+
+.icon-pause:before {
+  content: "\e667";
+}
+
+.icon-playlist:before {
+  content: "\ec7e";
+}
+
+.icon-github:before {
+  content: "\e64a";
+}
+
+.icon-prev:before {
+  content: "\e668";
+}
+

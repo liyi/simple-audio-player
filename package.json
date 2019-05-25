@@ -1,0 +1,19 @@
+{
+  "name": "simple-audio-player",
+  "author": "liyi",
+  "repository": "https://github.com/liyi/simple-audio-player.git",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "clean-css": "^4.2.1",
+    "html-minifier": "^4.0.0",
+    "rimraf": "^2.6.3",
+    "uglify-js": "^3.5.15"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "browser-sync start --files \"src/**/*\" --server \"src\"",
+    "build": "node ./build.js"
+  }
+}

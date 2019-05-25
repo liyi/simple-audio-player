@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>极简音频播放器</title>
+  <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <audio id="audio" src="media/liyi_naxiehuaer.mp3"></audio>
+  <div class="background"></div>
+  <div id="avatar" class="avatar">
+    <img src="img/avatar.jpg" alt="avatar" draggable="false">
+  </div>
+  <div class="lyric-wrapper">
+    <ul id="lyric" class="lyric"></ul>
+  </div>
+  <div class="control">
+    <div class="progress">
+      <div id="progress_bar" class="progress-bar"></div>
+      <div id="progress_slider" class="progress-slider-wrapper">
+        <div class="progress-slider"></div>
+      </div>
+    </div>
+    <div class="time">
+      <span id="current_time" class="time-current">00:00</span>
+      <span id="duration_time" class="time-duration">00:00</span>
+    </div>
+    <div class="ctrl_btn">
+      <i id="prev_btn" class="iconfont icon-prev"></i>
+      <i id="play_btn" class="iconfont icon-play active"></i>
+      <i id="pause_btn" class="iconfont icon-pause"></i>
+      <i id="next_btn" class="iconfont icon-next"></i>
+    </div>
+    <div class="copyright">
+      Simple Audio Player | Powered by Liyi | <a href="https://github.com/liyi/simple-audio-player" target="_blank"><i class="iconfont icon-github"></i> Github</a>
+    </div>
+  </div>
+  <div id="playlist_btn" class="title-wrapper">
+    <span id="title" class="title">那些花儿</span>
+    <i class="iconfont icon-playlist"></i>
+  </div>
+  <div id="playlist_wrapper" class="playlist-wrapper">
+    <div id="playlist_mask" class="playlist-mask"></div>
+    <div class="playlist-bg">
+      <span id="playlist_close" class="playlist-close">&times;</span>
+      <ul id="playlist" class="playlist">
+        <li class="playlist-item">
+          <i class="iconfont icon-play"></i>
+          <span class="playlist-item-title">正在加载...</span>
+          <span class="playlist-item-time">&nbsp;</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
